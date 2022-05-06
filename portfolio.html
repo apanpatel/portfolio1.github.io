@@ -1,0 +1,96 @@
+<html>
+    <head>
+        <title>personal-portfolio</title>
+      <link rel="stylesheet" href="css/portfolio.css">
+      <link rel="stylesheet" href="css/all.css">
+      <style></style>
+    </head>
+    <body>
+        <section>
+            <div class="header">
+               <div class="logo">Logo</div>
+               <div class="list">
+                   <li><a href="#home">home</a></li>
+                   <li><a href="#skill">skill</a></li>
+                   <li><a href="#work">work</a></li>
+                   <li><a href="#contact">contact</a></li>
+               </div>
+            </div>
+            <div id="home">
+                <div class="menubar">
+                    <div class="menubtn">
+                    <span> </span>
+                    <span> </span>
+                    <span> </span>
+                    </div>
+                </div>
+                <div class="menusidebar">
+                    <li><a href="#home">home</a></li>
+                    <li><a href="#skill">skill</a></li>
+                    <li><a href="#work">work</a></li>
+                    <li><a href="#contact">contact</a></li>
+                </div>
+                <div class="intro">
+                   <li> HELLO, </li>
+                    <li>My Name is <span> APAN </span></li>
+                   <li>I am a Web-Developer Fresher.</li>  
+                </div>
+                <div class="photo">
+                    <img src="image/appu.png" alt="">
+                </div>
+            </div>
+             <div id="skill">  
+                <div class="skills">
+                    <li>
+                        <h2>HTML</h2><span class="bar"><div class="html"></div></span>
+                    </li>
+                    <li>
+                        <h2>CSS</h2><span class="bar"><div class="css"></div></span>
+                    </li>
+                    <li>
+                        <h2>JAVA SCRIPT</h2><span class="bar"><div class="javascript"></div></span>
+                    </li>
+                    <li>
+                        <h2>JQUERY</h2><span class="bar"><div class="jquery"></div></span>
+                    </li>
+                </div>
+            </div>
+            <div id="work">
+                 <div class="container">
+                     <div class="design design1"><img src="image/pic1.png" alt=""></div>
+                     <div class="design design1"><img src="image/pic2.png" alt=""></div>
+                     <div class="design design1"><img src="image/pic3.png" alt=""></div>
+                     <div class="design design1"><img src="image/pic4.png" alt=""></div>
+                 </div>
+            </div>
+            <div id="contact">
+               <div class="connect">
+                  <div class="social-media whatsapp">
+                     <a href=""><i class="fab fa-whatsapp"></i></a>
+                     <span>+91 9999999999</span> 
+                  </div>
+                  <div class="social-media facebook">
+                    <a href=""><i class="fab fa-facebook-f"></i></a>
+                    <span>Apan Patel</span> 
+                  </div>
+                  <div class="social-media instagram">
+                    <a href=""><i class="fab fa-instagram"></i></a>
+                    <span>_apan_patel_</span> 
+                  </div>
+                  <div class="social-media google">
+                    <a href=""><i class="fab fa-google"></i></a>
+                    <span>apan@gmail.com</span> 
+                  </div>
+               </div>    
+            </div>
+        </section>
+        <script src="js/jquery.js"></script>
+        <script>
+            $(document).ready(function(){
+                $(".menubar").click(function(){
+                    $(".menusidebar").toggle(500);
+                });
+            });
+        </script>
+    </body>
+</html>
